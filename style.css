@@ -1,0 +1,564 @@
+body{
+    margin: 0;
+    
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-semiBold";
+    src: url(font/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(font/Montserrat-Medium.ttf);
+}
+
+
+
+
+
+
+
+
+
+#logo, #logo2{
+    height: 150px;
+    width: 200px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: black;
+   height: 140px;
+   position: fixed;
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+}
+
+ul{
+    display: flex;
+}
+
+ li{
+     list-style: none;
+     padding-right: 100px;
+     padding-top: 50px;
+ }
+
+ a{
+     text-decoration: none;
+     color:#fdb714;
+     font-family: "Montserrat-Bold";
+    
+ }
+
+ a:hover{
+     color: white;
+ }
+
+ #banner{
+     background-image: image();
+ }
+
+ #cover{
+    margin-top: 140px;
+     width: 100%;
+     height: 482px;
+ }
+
+ #textBanner{
+     text-align: center;
+     color:black;
+     font-family: "Montserrat-semiBold";
+     font-size: 2em;
+     position: relative;
+     bottom: 300px;
+ }
+
+ 
+
+ .iconeSV{
+     display: flex;
+     justify-content: space-around;
+ }
+
+ #wall, #hand, #wallet{
+     width: 100px;
+     height: 100px;
+    
+ }
+
+ #wall, #wallet{
+     position: relative;
+     left: 50px;
+ }
+
+ #hand{
+    position: relative;
+    left: 20px;
+ }
+
+ 
+
+ .log{
+    border: 1px solid black;
+    border-radius: 200px  200px  200px  200px;
+    padding: 50px;
+    background-color: #fdb714;
+ }
+
+ .text{
+    font-family: "Montserrat-Bold";
+    font-size: 30px;
+    text-align: center;
+ }
+
+ .textIcon{
+     text-align: center;
+     font-family: "Montserrat-Medium";
+     font-size: 13px;
+     margin-top: 10px;
+ }
+
+ .Icontext{
+     display: flex;
+     justify-content: space-between;
+ }
+
+
+ h1{
+    text-align: center;
+    font-size: 7em;
+    color:#fdb714;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+.textSV{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Montserrat-Medium";
+}
+
+figure>img{
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.imgSV{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figcaption{
+    font-family: "Montserrat-semiBold";
+    text-align: center;
+}
+
+.test, #texto{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 100px;
+    font-family: "Montserrat-Medium";
+}
+
+em{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+.slides{
+    width: calc(500Px * 3);
+    animation: carousel 5s infinite;
+}
+
+.slider{
+    overflow: hidden;
+    margin: auto;
+    width: 300px;
+}
+
+@keyframes carousel{
+    0%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(-297px);
+    }
+
+    66%{
+        transform: translateX(-594px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#backForm{
+    overflow: hidden;
+    max-width: 1347px;
+}
+
+form{
+    font-family: "Montserrat-semiBold";
+    width: 220px;
+    margin: auto;
+    position: relative;
+    bottom: 490px;
+    right: 200px;
+}
+
+#name, #mail, #tel{
+    width: 300px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+textarea{
+    border: 3px solid white;
+    border-radius: 25px;
+
+}
+
+button{
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color:#fdb714 ;
+    width: 100px;
+    height: 50px;
+    font-family: "Montserrat-Bold";
+}
+
+label{
+    color:#fdb714;
+}
+
+#coord{
+    text-align: center;
+    font-family: "Montserrat-Medium";
+    font-size: 30px;
+}
+
+footer{
+    font-family: "Montserrat-semiBold";
+    font-size: 20px;
+    text-align: center;
+    color:#fdb714;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 160px;
+}
+
+#textFooter{
+    margin-top: 50px;
+}
+
+
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+    
+    
+  
+   
+
+    h1{
+        font-size: 20px;
+    }
+
+    .textSV, #texto, .test{
+        font-size: 8px;
+    }
+
+    .textIcon{
+        display: none;
+    }
+
+    em, #coord{
+        font-size: 9px;
+    }
+
+    
+    ul{
+        flex-direction: column;
+    }
+   
+    li{
+        font-size: 10px;
+        padding: 1px;
+       
+    }
+
+   
+
+    #textFooter{
+        font-size: 10px;
+        margin: 0;
+    }
+    
+    .iconeSV{
+        flex-direction: column;
+    }
+
+    #backForm{
+        overflow: hidden;
+        max-width: 320px;
+        height: 300px;
+    }
+
+    
+    #name, #mail, #tel{
+        width: 100px;
+        height: 10px;
+        border: 3px solid white;
+        border-radius: 25px;
+    }
+    
+    textarea{
+        border: 3px solid white;
+        border-radius: 25px;
+        height: 80px;
+        width: 200px;
+    }
+
+   label{
+       font-size: 10px;
+   }
+
+   #name, #mail, #tel, textarea, button, label{
+       position: relative;
+       left:150px;
+       top: 180px;
+   }
+
+   .stop{
+       display: none;
+   }
+
+   #textBanner{
+    font-size: 15px;
+   }
+   
+   
+  }
+
+
+  @media screen and (width: 375px){
+    #backForm{
+        overflow: hidden;
+        max-width: 375px;
+        height: 300px;
+    }
+
+    #textFooter{
+        margin-top: 20px;
+    }
+
+
+  }
+
+  @media screen and (width: 425px){
+    #backForm{
+        overflow: hidden;
+        max-width: 425px;
+        height: 300px;
+    }
+
+    
+    #textFooter{
+        margin-top: 30px;
+    }
+
+}
+
+
+@media screen and (width: 768px){
+  ul, li{
+      padding: 8px;
+      font-size: 12px;
+  }
+
+  li{
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
+  #textFooter{
+    font-size: 20px;
+    margin: 5px;
+}
+
+  #backForm{
+    overflow: hidden;
+    max-width: 768px;
+    height: 300px;
+}
+
+#name, #mail, #tel{
+    width: 200px;
+    height: 10px;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+textarea{
+    border: 3px solid white;
+    border-radius: 25px;
+    height: 80px;
+    width: 200px;
+}
+
+label{
+   font-size: 10px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.textSV, #texto, .test{
+    font-size: 15px;
+}
+
+.log{
+    width: 100px;
+}
+
+.text{
+    font-size: 15px;
+}
+
+textarea{
+    border: 3px solid white;
+    border-radius: 25px;
+    height: 80px;
+    width: 200px;
+}
+
+label{
+   font-size: 10px;
+}
+
+#name, #mail, #tel, textarea, button, label{
+   position: relative;
+   left:150px;
+   top: 180px;
+}
+
+.stop{
+   display: none;
+}
+
+
+
+}
+
+
+@media screen and (width: 1024px){
+    #backForm{
+        overflow: hidden;
+        max-width: 1024px;
+        height: 300px;
+    }
+
+    
+textarea{
+    border: 3px solid white;
+    border-radius: 25px;
+    height: 80px;
+    width: 500px;
+}
+
+label{
+   font-size: 15px;
+}
+
+#name, #mail, #tel, textarea, button, label{
+   position: relative;
+   left:150px;
+   top: 50px;
+}
+
+
+
+.textSV, #texto, .test{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+ul, li{
+    padding: 8px;
+    font-size: 20px;
+}
+
+
+li{
+    margin-top: 30px;
+    
+  }
+
+  #backForm{
+    overflow: hidden;
+    max-width: 1024px;
+    height: 500px;
+}
+}
+
+
+@media screen and (min-width: 2560px){
+    #backForm{
+        overflow: hidden;
+        max-width: 3000px;
+        margin-left: 12%;
+        
+    }
+
+    textarea{
+        border: 3px solid white;
+        border-radius: 25px;
+        height: 120px;
+        width: 800px;
+    }
+    
+    label{
+       font-size: 17px;
+    }
+    
+    #name, #mail, #tel, textarea, button, label{
+       position: relative;
+       left:130px;
+        bottom: 150px;
+    }
+
+    #name, #mail, #tel{
+        width: 500px;
+        height: 80px;
+     }
+    
+}
+
+iframe{
+   width: 99%;
+    height: 482px;
+    overflow: hidden;
+    margin-bottom: 300px;
+}
